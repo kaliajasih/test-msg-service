@@ -4,7 +4,7 @@ import { useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
-import { HiSparkles, HiEye, HiEyeOff } from "react-icons/hi2";
+import { HiSparkles, HiEye, HiEyeSlash } from "react-icons/hi2";
 import { useTheme } from "@/components/ThemeProvider";
 import { RiMoonFill, RiSunFill } from "react-icons/ri";
 
@@ -207,7 +207,7 @@ export default function AuthPage() {
                 <button type="button" onClick={() => setShowPass(!showPass)}
                   className="absolute right-3 top-1/2 -translate-y-1/2 p-1"
                   style={{ color: "var(--text-muted)" }}>
-                  {showPass ? <HiEyeOff size={18} /> : <HiEye size={18} />}
+                  {showPass ? <HiEyeSlash size={18} /> : <HiEye size={18} />}
                 </button>
               </div>
             </div>
